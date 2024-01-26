@@ -1,3 +1,4 @@
 db/
 config-private.json
 .ipynb_checkpoints
+.idea
