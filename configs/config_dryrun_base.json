@@ -37,7 +37,6 @@
         "pair_whitelist": [
         ],
         "pair_blacklist": [
-            "BNB/.*"
         ]
     },
     "pairlists": [
@@ -77,4 +76,6 @@
     "add_config_files": [
         "config-private.json"
     ],
+    "datadir": "user_data/data",
+    "timeframe": "5m"
 }
