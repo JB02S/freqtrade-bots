@@ -16,17 +16,16 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.8'  # Set your Python version here
+        python-version: '3.8'
 
     - name: Install Freqtrade
       run: |
         git clone -b develop --depth 1 https://github.com/freqtrade/freqtrade.git
         cd freqtrade
         ./setup.sh -i
-        source .venv/bin/activate
-        
-    
 
     - name: Run tests
       run: |
-        pytest tests/  # Or your specific test command
+        source freqtrade/.venv/bin/activate
+        pytest tests/
+        
