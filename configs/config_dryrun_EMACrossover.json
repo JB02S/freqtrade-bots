@@ -1,0 +1,22 @@
+{
+  "add_config_files": [
+    "config_dryrun_base.json"
+  ],
+  "exchange": {
+    "pair_whitelist": [
+      "BTC/USDT"
+    ]
+  },
+  "pairlists": [
+    {
+      "method": "StaticPairList"
+    }
+  ],
+  "bot_name": "EMACrossover_dryrun",
+  "initial_state": "running",
+  "force_entry_enable": false,
+  "strategy_path":"strategies",
+  "db_url":"sqlite:///user_data/db/EMACrossover_dryrun.sqlite",
+  "strategy": "EMACrossover",
+  "timeframe": "5m"
+}

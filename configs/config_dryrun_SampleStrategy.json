@@ -18,7 +18,7 @@
             "method": "StaticPairList"
         }
     ],
-    "bot_name": "SampleStrategy",
+    "bot_name": "SampleStrategy_dryrun",
     "initial_state": "running",
     "force_entry_enable": false,
     "strategy_path":"strategies",

@@ -74,7 +74,7 @@
     "strategy_path":"strategies",
     "db_url":"sqlite:///user_data/db/dryrun.sqlite",
     "add_config_files": [
-        "config-private.json"
+        "config_private.json"
     ],
     "datadir": "user_data/data",
     "timeframe": "5m"
