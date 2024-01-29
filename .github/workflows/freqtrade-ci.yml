@@ -1,0 +1,29 @@
+name: freqtrade bots test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'  # Set your Python version here
+
+    - name: Install Freqtrade
+      run: |
+        git clone -b develop --depth 1 https://github.com/freqtrade/freqtrade.git
+        cd freqtrade
+        ./setup.sh --install
+
+    - name: Run tests
+      run: |
+        pytest tests/  # Or your specific test command
