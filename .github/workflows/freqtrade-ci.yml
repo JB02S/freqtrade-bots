@@ -22,8 +22,11 @@ jobs:
       run: |
         git clone -b develop --depth 1 https://github.com/freqtrade/freqtrade.git
         cd freqtrade
-        ./setup.sh --install
+        ./setup.sh -i
+        
+    
 
     - name: Run tests
       run: |
+        freqtrade -h 
         pytest tests/  # Or your specific test command
