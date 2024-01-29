@@ -17,11 +17,6 @@ class EMACrossover(IStrategy):
     """
 
     INTERFACE_VERSION: int = 3
-    minimal_roi = {
-        "0": 0.01
-    }
-
-    stoploss = -0.25
 
     timeframe = '5m'
 
@@ -29,7 +24,9 @@ class EMACrossover(IStrategy):
 
         ema50 = ta.EMA(dataframe, timeperiod=50)
         ema200 = ta.EMA(dataframe, timeperiod=200)
-        # print(type(ema50))
+
+
+
         dataframe['ema50'] = ema50
         dataframe['ema200'] = ema200
 
