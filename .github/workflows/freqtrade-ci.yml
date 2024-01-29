@@ -31,5 +31,6 @@ jobs:
 
     - name: Run tests
       run: |
+        source freqtrade/.venv/bin/activate
         pytest tests/
         
