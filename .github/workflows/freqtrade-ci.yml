@@ -23,6 +23,7 @@ jobs:
         git clone -b develop --depth 1 https://github.com/freqtrade/freqtrade.git
         cd freqtrade
         ./setup.sh -i
+        pip install -e .
 
     - name: Install Dependencies
       run: |
