@@ -12,11 +12,11 @@
       "method": "StaticPairList"
     }
   ],
-  "bot_name": "BasicMACD_dryrun",
+  "bot_name": "BasicMACDSTOCH_dryrun",
   "initial_state": "running",
   "force_entry_enable": false,
   "strategy_path":"strategies",
-  "db_url":"sqlite:///user_data/db/BasicMACD_dryrun.sqlite",
-  "strategy": "BasicMACD",
+  "db_url":"sqlite:///user_data/db/BasicMACDSTOCH_dryrun.sqlite",
+  "strategy": "BasicMACDSTOCH",
   "timeframe": "5m"
 }
