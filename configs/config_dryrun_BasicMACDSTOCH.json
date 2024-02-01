@@ -1,0 +1,22 @@
+{
+  "add_config_files": [
+    "config_dryrun_base.json"
+  ],
+  "exchange": {
+    "pair_whitelist": [
+      "BTC/USDT"
+    ]
+  },
+  "pairlists": [
+    {
+      "method": "StaticPairList"
+    }
+  ],
+  "bot_name": "BasicMACDSTOCH_dryrun",
+  "initial_state": "running",
+  "force_entry_enable": false,
+  "strategy_path":"strategies",
+  "db_url":"sqlite:///user_data/db/BasicMACDSTOCH_dryrun.sqlite",
+  "strategy": "BasicMACDSTOCH",
+  "timeframe": "5m"
+}
