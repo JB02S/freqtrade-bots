@@ -4,7 +4,7 @@
   ],
   "exchange": {
     "pair_whitelist": [
-      "BTC/USDT"
+      "BTC/USDT:USDT"
     ]
   },
   "pairlists": [
@@ -13,10 +13,15 @@
     }
   ],
   "bot_name": "EMACrossover_dryrun",
+  "can_short": "",
   "initial_state": "running",
   "force_entry_enable": false,
   "strategy_path":"strategies",
   "db_url":"sqlite:///user_data/db/EMACrossover_dryrun.sqlite",
   "strategy": "EMACrossover",
-  "timeframe": "5m"
+  "timeframe": "5m",
+  "api_server": {
+    "listen_port": 8080,
+    "username": "freqtrader1"
+  }
 }

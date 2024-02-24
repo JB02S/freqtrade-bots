@@ -5,7 +5,7 @@ from pandas import DataFrame
 
 import talib.abstract as ta
 
-class BasicMACD(IStrategy):
+class BasicMACDSTOCH(IStrategy):
 
 
     timeframe = '5m'
@@ -24,9 +24,6 @@ class BasicMACD(IStrategy):
                                 slowd_matype=0)
         dataframe['slowk'] = stoch['slowk']
         dataframe['slowd'] = stoch['slowd']
-        print("\n\n\n\n")
-        print(dataframe)
-        print("\n\n\n\n")
         return dataframe
 
     def populate_entry_trend(self, dataframe: DataFrame, metadata: dict) -> DataFrame:

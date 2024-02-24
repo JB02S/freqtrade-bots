@@ -4,7 +4,7 @@
   ],
   "exchange": {
     "pair_whitelist": [
-      "BTC/USDT"
+      "BTC/USDT:USDT"
     ]
   },
   "pairlists": [
@@ -18,5 +18,9 @@
   "strategy_path":"strategies",
   "db_url":"sqlite:///user_data/db/BasicMACDSTOCH_dryrun.sqlite",
   "strategy": "BasicMACDSTOCH",
-  "timeframe": "5m"
+  "timeframe": "5m",
+  "api_server": {
+    "listen_port": 8081,
+    "username": "freqtrader2"
+  }
 }

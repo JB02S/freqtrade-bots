@@ -8,8 +8,8 @@
     "dry_run": true,
     "dry_run_wallet": 1000,
     "cancel_open_orders_on_exit": false,
-    "trading_mode": "spot",
-    "margin_mode": "",
+    "trading_mode": "futures",
+    "margin_mode": "isolated",
     "unfilledtimeout": {
         "entry": 10,
         "exit": 10,
@@ -32,6 +32,7 @@
         "order_book_top": 1
     },
     "exchange": {
+        "name": "gateio",
         "ccxt_config": {},
         "ccxt_async_config": {},
         "pair_whitelist": [
@@ -48,29 +49,6 @@
             "refresh_period": 1800
         }
     ],
-    "telegram": {
-        "enabled": false,
-        "token": "",
-        "chat_id": ""
-    },
-    "api_server": {
-        "enabled": true,
-        "listen_ip_address": "127.0.0.1",
-        "listen_port": 8080,
-        "verbosity": "error",
-        "enable_openapi": false,
-        "jwt_secret_key": "27500ded9d1aeaec58ec96599c9bda456ad16a87b603e0eb7a4d95498af3f507",
-        "ws_token": "T9pTvDvV5BP1m5voEj3OjYMaszE-FR_faA",
-        "CORS_origins": [],
-        "username": "freqtrader",
-        "password": "123"
-    },
-    "bot_name": "freqtrade",
-    "initial_state": "running",
-    "force_entry_enable": false,
-    "internals": {
-        "process_throttle_secs": 5
-    },
     "strategy_path":"strategies",
     "db_url":"sqlite:///user_data/db/dryrun.sqlite",
     "add_config_files": [
